@@ -1,7 +1,5 @@
-import java.util.Scanner;
-
 /**
-Time Complexity: O(N*2)
+Time Complexity: O(n*n)
 Space Complexity: O(1)
  */
 public class TwoSumBruteForce {

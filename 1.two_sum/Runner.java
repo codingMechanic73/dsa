@@ -17,7 +17,13 @@ public class Runner {
         System.out.println("Enter the target:");
         int target = sc.nextInt();
         
-        int[] result = TwoSumBruteForce.findTwoSum(nums, target);
-        System.out.println("Result is " + result[0] + " " + result[1]);
+        int[] resultUsingBruteForce = TwoSumBruteForce.findTwoSum(nums, target);
+        System.out.println("Result using brute force is " + resultUsingBruteForce[0] + " " + resultUsingBruteForce[1]);
+
+        int[] resultUsingSort = TwoSumUsingSort.findTwoSum(nums, target);
+        System.out.println("Result using sorting is " + resultUsingSort[0] + " " + resultUsingSort[1]);
+    
+        int[] resultUsingMap = TwoSumUsingMap.findTwoSum(nums, target);
+        System.out.println("Result using map is " + resultUsingMap[0] + " " + resultUsingMap[1]);
     }
 }
